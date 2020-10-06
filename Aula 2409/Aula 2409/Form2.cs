@@ -90,6 +90,7 @@ namespace Aula_2409
             pictureBox3.Visible = false;
             pictureBox2.Visible = true;
             pictureBox4.Visible = false;
+            panel10.ForeColor = Color.Black;
             day = true;
             option = 1;
         }
@@ -106,6 +107,7 @@ namespace Aula_2409
             pictureBox3.Visible = true;
             pictureBox2.Visible = false;
             pictureBox4.Visible = true;
+            panel10.ForeColor = Color.White;
             day = false;
             option = 3;
         }
@@ -122,6 +124,7 @@ namespace Aula_2409
             pictureBox3.Visible = true;
             pictureBox2.Visible = false;
             pictureBox4.Visible = true;
+            panel10.ForeColor = Color.White;
             option = 2;
         }
 
@@ -137,6 +140,7 @@ namespace Aula_2409
             pictureBox3.Visible = false;
             pictureBox2.Visible = true;
             pictureBox4.Visible = false;
+            panel10.ForeColor = Color.Black;
             option = 0;
         }
 

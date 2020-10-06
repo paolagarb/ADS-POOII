@@ -41,7 +41,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
             this.splitter1 = new System.Windows.Forms.Splitter();
-            this.hScrollBar1 = new System.Windows.Forms.HScrollBar();
             this.label3 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
@@ -232,13 +231,6 @@
             this.splitter1.Size = new System.Drawing.Size(3, 211);
             this.splitter1.TabIndex = 15;
             this.splitter1.TabStop = false;
-            // 
-            // hScrollBar1
-            // 
-            this.hScrollBar1.Location = new System.Drawing.Point(176, 179);
-            this.hScrollBar1.Name = "hScrollBar1";
-            this.hScrollBar1.Size = new System.Drawing.Size(59, 21);
-            this.hScrollBar1.TabIndex = 16;
             // 
             // label3
             // 
@@ -698,7 +690,6 @@
             this.Controls.Add(this.panel8);
             this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.hScrollBar1);
             this.Controls.Add(this.splitter1);
             this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.pictureBox4);
@@ -753,7 +744,6 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Splitter splitter1;
-        private System.Windows.Forms.HScrollBar hScrollBar1;
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Panel panel6;
