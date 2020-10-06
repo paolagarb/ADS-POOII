@@ -56,12 +56,23 @@ namespace Aula_2409
             {
                 if(numQuantidade.Value > 0)
                 {
-                    MessageBox.Show("Salvo com sucesso!");
-                } else
+                    var result = MessageBox.Show("Salvo com sucesso!", "CONFIRMAR", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+                    if (result == DialogResult.Cancel)
+                    {
+                        MessageBox.Show("Venda cancelada.");
+                    } else
+                    {
+                        txtCodigo.Text = "";
+                        txtCodigo.Focus();
+                        numQuantidade.Value = 0;
+                    }
+                } 
+                else
                 {
                     MessageBox.Show("Insira a quantidade.");
                 }
-            } else
+            } 
+            else
             {
                 MessageBox.Show("Insira o código.");
             }

@@ -62,7 +62,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(169, 10);
+            this.label1.Location = new System.Drawing.Point(158, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(87, 38);
             this.label1.TabIndex = 7;
@@ -104,7 +104,7 @@
             // picSol
             // 
             this.picSol.Image = global::Aula_2409.Properties.Resources.sol1;
-            this.picSol.Location = new System.Drawing.Point(255, 13);
+            this.picSol.Location = new System.Drawing.Point(244, 13);
             this.picSol.Name = "picSol";
             this.picSol.Size = new System.Drawing.Size(23, 23);
             this.picSol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -116,7 +116,7 @@
             // picLua
             // 
             this.picLua.Image = global::Aula_2409.Properties.Resources.lua;
-            this.picLua.Location = new System.Drawing.Point(255, 13);
+            this.picLua.Location = new System.Drawing.Point(244, 13);
             this.picLua.Name = "picLua";
             this.picLua.Size = new System.Drawing.Size(23, 23);
             this.picLua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
