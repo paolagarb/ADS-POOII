@@ -24,6 +24,7 @@ namespace Aula_2409
         public Form2(bool day)
         {
             InitializeComponent();
+            trackBar1.Maximum = 3;
             if (day)
             {
                 Day();
@@ -35,6 +36,7 @@ namespace Aula_2409
 
         private void Form2_Load(object sender, EventArgs e)
         {
+            trackBar1.Visible = false;
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -104,6 +106,57 @@ namespace Aula_2409
             pictureBox2.Visible = false;
             pictureBox4.Visible = true;
             day = false;
+        }
+
+        private void picSol_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+            
+        }
+
+        private void picLua_MouseDoubleClick(object sender, MouseEventArgs e)
+        {
+           
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (trackBar1.Visible == true)
+            {
+                trackBar1.Visible = false;
+            } else
+            {
+                this.trackBar1.Visible = true;
+            }
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void pictureBox1_Click_1(object sender, EventArgs e)
+        {
+            if (trackBar1.Visible == true)
+            {
+                trackBar1.Visible = false;
+            }
+            else
+            {
+                this.trackBar1.Visible = true;
+            }
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+           if (trackBar1.Value == 1)
+            {
+                Day();
+            }
+            
+            if (trackBar1.Value == 3)
+            {
+                Night();
+            }
         }
     }
 }

@@ -45,7 +45,6 @@ namespace Aula_2409
             {
                 MessageBox.Show("Preencha os campos!");
             }
-            
         }
 
         private void pictureBox2_Click_1(object sender, EventArgs e)
@@ -55,7 +54,7 @@ namespace Aula_2409
 
         private void Form1_Load(object sender, EventArgs e)
         {
-
+            txtLogin.Select();
         }
 
         private void picLua_Click(object sender, EventArgs e)
