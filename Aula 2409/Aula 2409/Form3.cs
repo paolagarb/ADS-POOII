@@ -22,6 +22,19 @@ namespace Aula_2409
             pictureBox6.Visible = false;
         }
 
+        public Form3(bool day)
+        {
+            InitializeComponent();
+            if (day)
+            {
+                Day();
+            } else
+            {
+                Night();
+            }
+
+        }
+
         private void pictureBox2_Click(object sender, EventArgs e)
         {
             Close();
@@ -29,7 +42,7 @@ namespace Aula_2409
 
         private void lblVoltar_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2();
+            Form2 form2 = new Form2(day);
             form2.Show();
             this.Hide();
         }
@@ -68,21 +81,28 @@ namespace Aula_2409
 
         private void pictureBox4_Click(object sender, EventArgs e)
         {
-            pictureBox4.Visible = false;
-            pictureBox5.Visible = true;
-            pictureBox6.Visible = true;
-            pictureBox2.Visible = false;
-            pictureBox3.Visible = true;
-            pictureBox1.Visible = false;
-            label1.ForeColor = Color.White;
-            label2.ForeColor = Color.White;
-            label3.ForeColor = Color.White;
-            lblVoltar.ForeColor = Color.White;
-            this.BackColor = Color.Black;
-            day = false;
+            Night();
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            Day();
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
+        }
+
+        private void Day()
         {
             pictureBox4.Visible = true;
             pictureBox5.Visible = false;
@@ -98,17 +118,22 @@ namespace Aula_2409
             day = true;
         }
 
-        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        private void Night()
         {
-            
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = true;
+            pictureBox6.Visible = true;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = true;
+            pictureBox1.Visible = false;
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+            lblVoltar.ForeColor = Color.White;
+            this.BackColor = Color.Black;
+            day = false;
         }
 
-        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
-        {
-            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
-            {
-                e.Handled = true;
-            }
-        }
+       
     }
 }

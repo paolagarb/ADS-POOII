@@ -21,6 +21,19 @@ namespace Aula_2409
             picLogoB.Visible = false;
         }
 
+        public Form1(bool day)
+        {
+            InitializeComponent();
+            if (day)
+            {
+                Day();
+            } else
+            {
+                Night();
+            }
+
+        }
+
         private void btnEntrar_Click(object sender, EventArgs e)
         {
             if (!string.IsNullOrEmpty(txtLogin.Text) || !string.IsNullOrEmpty(txtSenha.Text))
@@ -47,19 +60,25 @@ namespace Aula_2409
 
         private void picLua_Click(object sender, EventArgs e)
         {
-            label1.ForeColor = Color.White;
-            label2.ForeColor = Color.White;
-            picSol.Visible = true;
-            picLua.Visible = false;
-            picLogoB.Visible = true;
-            picLogo.Visible = false;
-            picSairB.Visible = true;
-            pictureBox2.Visible = false;
-            this.BackColor = Color.Black;
-            day = false;
+            Night();
         }
 
         private void picSol_Click(object sender, EventArgs e)
+        {
+            Day();
+        }
+
+        private void picSairB_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void txtSenha_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Day()
         {
             label1.ForeColor = Color.Black;
             label2.ForeColor = Color.Black;
@@ -73,14 +92,18 @@ namespace Aula_2409
             day = true;
         }
 
-        private void picSairB_Click(object sender, EventArgs e)
+        private void Night()
         {
-            Close();
-        }
-
-        private void txtSenha_TextChanged(object sender, EventArgs e)
-        {
-
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            picSol.Visible = true;
+            picLua.Visible = false;
+            picLogoB.Visible = true;
+            picLogo.Visible = false;
+            picSairB.Visible = true;
+            pictureBox2.Visible = false;
+            this.BackColor = Color.Black;
+            day = false;
         }
     }
 }

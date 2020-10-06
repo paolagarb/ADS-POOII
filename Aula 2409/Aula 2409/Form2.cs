@@ -12,6 +12,7 @@ namespace Aula_2409
 {
     public partial class Form2 : Form
     {
+        bool day;
         public Form2()
         {
             InitializeComponent();
@@ -23,9 +24,6 @@ namespace Aula_2409
         public Form2(bool day)
         {
             InitializeComponent();
-            /*picSol.Visible = false;
-            pictureBox3.Visible = false;
-            pictureBox4.Visible = false;*/
             if (day)
             {
                 Day();
@@ -41,14 +39,14 @@ namespace Aula_2409
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1();
+            Form1 form1 = new Form1(day);
             form1.Show();
             this.Hide();
         }
 
         private void lblNova_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3();
+            Form3 form3 = new Form3(day);
             this.Visible = false;
             form3.Show();
         }
@@ -90,6 +88,7 @@ namespace Aula_2409
             pictureBox3.Visible = false;
             pictureBox2.Visible = true;
             pictureBox4.Visible = false;
+            day = true;
         }
 
         private void Night()
@@ -104,6 +103,7 @@ namespace Aula_2409
             pictureBox3.Visible = true;
             pictureBox2.Visible = false;
             pictureBox4.Visible = true;
+            day = false;
         }
     }
 }
