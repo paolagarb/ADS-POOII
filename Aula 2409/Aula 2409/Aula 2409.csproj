@@ -104,5 +104,20 @@
   <ItemGroup>
     <None Include="Resources\sair.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lua.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sol.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sol1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-sunglasses-logo-brand-shopping-happy-hour-flyer-5adefc942d6946.796572671524563092186 %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\sair-branco.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
