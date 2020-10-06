@@ -186,8 +186,14 @@ namespace Aula_2409
            if (trackBar1.Value == 3) Night();
         }
 
-   
+        private void panel3_Paint(object sender, PaintEventArgs e)
+        {
 
-       
+        }
+
+        private void panel10_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
