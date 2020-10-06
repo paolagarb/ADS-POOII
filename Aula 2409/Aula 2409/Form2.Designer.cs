@@ -101,7 +101,7 @@
             // picSol
             // 
             this.picSol.Image = global::Aula_2409.Properties.Resources.sol1;
-            this.picSol.Location = new System.Drawing.Point(255, 16);
+            this.picSol.Location = new System.Drawing.Point(255, 13);
             this.picSol.Name = "picSol";
             this.picSol.Size = new System.Drawing.Size(23, 23);
             this.picSol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -112,7 +112,7 @@
             // picLua
             // 
             this.picLua.Image = global::Aula_2409.Properties.Resources.lua;
-            this.picLua.Location = new System.Drawing.Point(255, 16);
+            this.picLua.Location = new System.Drawing.Point(255, 13);
             this.picLua.Name = "picLua";
             this.picLua.Size = new System.Drawing.Size(23, 23);
             this.picLua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;

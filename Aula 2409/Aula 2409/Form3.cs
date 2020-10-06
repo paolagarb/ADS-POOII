@@ -15,6 +15,9 @@ namespace Aula_2409
         public Form3()
         {
             InitializeComponent();
+            pictureBox3.Visible = false;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
         }
 
         private void pictureBox2_Click(object sender, EventArgs e)
@@ -36,7 +39,53 @@ namespace Aula_2409
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Salvo com sucesso");
+            if(!string.IsNullOrEmpty(txtCodigo.Text) || !string.IsNullOrEmpty(txtQuantidad.Text))
+            {
+                MessageBox.Show("Salvo com sucesso");
+            } else
+            {
+                MessageBox.Show("Preencha os campos!");
+            }
+        }
+
+        private void Form3_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pictureBox6_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = true;
+            pictureBox6.Visible = true;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = true;
+            pictureBox1.Visible = false;
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+            lblVoltar.ForeColor = Color.White;
+            this.BackColor = Color.Black;
+        }
+
+        private void pictureBox5_Click(object sender, EventArgs e)
+        {
+            pictureBox4.Visible = true;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = false;
+            pictureBox1.Visible = true;
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.Black;
+            lblVoltar.ForeColor = Color.Black;
+            this.BackColor = Color.SandyBrown;
         }
     }
 }

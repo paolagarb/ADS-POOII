@@ -34,9 +34,17 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picLogo = new System.Windows.Forms.PictureBox();
+            this.picLua = new System.Windows.Forms.PictureBox();
+            this.picSol = new System.Windows.Forms.PictureBox();
+            this.picSairB = new System.Windows.Forms.PictureBox();
+            this.picLogoB = new System.Windows.Forms.PictureBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLua)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSol)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSairB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoB)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -68,8 +76,10 @@
             this.txtSenha.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtSenha.Location = new System.Drawing.Point(146, 117);
             this.txtSenha.Name = "txtSenha";
+            this.txtSenha.PasswordChar = '*';
             this.txtSenha.Size = new System.Drawing.Size(176, 23);
             this.txtSenha.TabIndex = 2;
+            this.txtSenha.TextChanged += new System.EventHandler(this.txtSenha_TextChanged);
             // 
             // label1
             // 
@@ -102,15 +112,58 @@
             this.pictureBox2.TabStop = false;
             this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click_1);
             // 
-            // pictureBox1
+            // picLogo
             // 
-            this.pictureBox1.Image = global::Aula_2409.Properties.Resources.kisspng_sunglasses_logo_brand_shopping_happy_hour_flyer_5adefc942d6946_796572671524563092186;
-            this.pictureBox1.Location = new System.Drawing.Point(155, -4);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(124, 60);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 7;
-            this.pictureBox1.TabStop = false;
+            this.picLogo.Image = global::Aula_2409.Properties.Resources.kisspng_sunglasses_logo_brand_shopping_happy_hour_flyer_5adefc942d6946_796572671524563092186;
+            this.picLogo.Location = new System.Drawing.Point(155, -4);
+            this.picLogo.Name = "picLogo";
+            this.picLogo.Size = new System.Drawing.Size(124, 60);
+            this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogo.TabIndex = 7;
+            this.picLogo.TabStop = false;
+            // 
+            // picLua
+            // 
+            this.picLua.Image = global::Aula_2409.Properties.Resources.lua;
+            this.picLua.Location = new System.Drawing.Point(6, 4);
+            this.picLua.Name = "picLua";
+            this.picLua.Size = new System.Drawing.Size(23, 23);
+            this.picLua.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLua.TabIndex = 9;
+            this.picLua.TabStop = false;
+            this.picLua.Click += new System.EventHandler(this.picLua_Click);
+            // 
+            // picSol
+            // 
+            this.picSol.Image = global::Aula_2409.Properties.Resources.sol1;
+            this.picSol.Location = new System.Drawing.Point(6, 5);
+            this.picSol.Name = "picSol";
+            this.picSol.Size = new System.Drawing.Size(23, 23);
+            this.picSol.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSol.TabIndex = 10;
+            this.picSol.TabStop = false;
+            this.picSol.Click += new System.EventHandler(this.picSol_Click);
+            // 
+            // picSairB
+            // 
+            this.picSairB.Image = global::Aula_2409.Properties.Resources.sair_branco;
+            this.picSairB.Location = new System.Drawing.Point(369, 5);
+            this.picSairB.Name = "picSairB";
+            this.picSairB.Size = new System.Drawing.Size(27, 21);
+            this.picSairB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSairB.TabIndex = 11;
+            this.picSairB.TabStop = false;
+            this.picSairB.Click += new System.EventHandler(this.picSairB_Click);
+            // 
+            // picLogoB
+            // 
+            this.picLogoB.Image = global::Aula_2409.Properties.Resources.kisspng_sunglasses_logo_brand_shopping_happy_hour_flyer_5adefc942d6946_796572671524563092186__1_;
+            this.picLogoB.Location = new System.Drawing.Point(155, -4);
+            this.picLogoB.Name = "picLogoB";
+            this.picLogoB.Size = new System.Drawing.Size(124, 60);
+            this.picLogoB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picLogoB.TabIndex = 12;
+            this.picLogoB.TabStop = false;
             // 
             // Form1
             // 
@@ -118,8 +171,12 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(406, 211);
+            this.Controls.Add(this.picLogoB);
+            this.Controls.Add(this.picSairB);
+            this.Controls.Add(this.picSol);
+            this.Controls.Add(this.picLua);
             this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picLogo);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtSenha);
@@ -129,8 +186,13 @@
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogo)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLua)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSol)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSairB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picLogoB)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -144,7 +206,11 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox picLogo;
+        private System.Windows.Forms.PictureBox picLua;
+        private System.Windows.Forms.PictureBox picSol;
+        private System.Windows.Forms.PictureBox picSairB;
+        private System.Windows.Forms.PictureBox picLogoB;
     }
 }
 
