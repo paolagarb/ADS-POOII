@@ -20,6 +20,21 @@ namespace Aula_2409
             pictureBox4.Visible = false;
         }
 
+        public Form2(bool day)
+        {
+            InitializeComponent();
+            /*picSol.Visible = false;
+            pictureBox3.Visible = false;
+            pictureBox4.Visible = false;*/
+            if (day)
+            {
+                Day();
+            } else
+            {
+                Night();
+            }
+        }
+
         private void Form2_Load(object sender, EventArgs e)
         {
         }
@@ -50,22 +65,34 @@ namespace Aula_2409
 
         private void picSol_Click(object sender, EventArgs e)
         {
+            Day();
+        }
+
+        private void picLua_Click(object sender, EventArgs e)
+        {
+            Night();
+        }
+
+        private void pictureBox4_Click(object sender, EventArgs e)
+        {
+            Close();
+        }
+
+        private void Day()
+        {
             picSol.Visible = false;
             picLua.Visible = true;
             this.BackColor = Color.SandyBrown;
-
             label1.ForeColor = Color.Black;
             label2.ForeColor = Color.Black;
             lblNova.ForeColor = Color.Black;
-
-
             pictureBox1.Visible = true;
             pictureBox3.Visible = false;
             pictureBox2.Visible = true;
             pictureBox4.Visible = false;
         }
 
-        private void picLua_Click(object sender, EventArgs e)
+        private void Night()
         {
             picLua.Visible = false;
             picSol.Visible = true;
@@ -77,11 +104,6 @@ namespace Aula_2409
             pictureBox3.Visible = true;
             pictureBox2.Visible = false;
             pictureBox4.Visible = true;
-        }
-
-        private void pictureBox4_Click(object sender, EventArgs e)
-        {
-            Close();
         }
     }
 }

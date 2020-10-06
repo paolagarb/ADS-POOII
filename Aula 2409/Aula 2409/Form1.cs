@@ -12,6 +12,7 @@ namespace Aula_2409
 {
     public partial class Form1 : Form
     {
+        bool day = true;
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +25,7 @@ namespace Aula_2409
         {
             if (!string.IsNullOrEmpty(txtLogin.Text) || !string.IsNullOrEmpty(txtSenha.Text))
             {
-                Form2 form2 = new Form2();
+                Form2 form2 = new Form2(day);
                 form2.Show();
                 this.Hide();
             } else
@@ -55,6 +56,7 @@ namespace Aula_2409
             picSairB.Visible = true;
             pictureBox2.Visible = false;
             this.BackColor = Color.Black;
+            day = false;
         }
 
         private void picSol_Click(object sender, EventArgs e)
@@ -68,6 +70,7 @@ namespace Aula_2409
             picSairB.Visible = false;
             pictureBox2.Visible = true;
             this.BackColor = Color.SandyBrown;
+            day = true;
         }
 
         private void picSairB_Click(object sender, EventArgs e)

@@ -10,8 +10,10 @@ using System.Windows.Forms;
 
 namespace Aula_2409
 {
+    
     public partial class Form3 : Form
     {
+        bool day = true;
         public Form3()
         {
             InitializeComponent();
@@ -39,12 +41,18 @@ namespace Aula_2409
 
         private void btnSalvar_Click(object sender, EventArgs e)
         {
-            if(!string.IsNullOrEmpty(txtCodigo.Text) || !string.IsNullOrEmpty(txtQuantidad.Text))
+            if(!string.IsNullOrEmpty(txtCodigo.Text))
             {
-                MessageBox.Show("Salvo com sucesso");
+                if(numQuantidade.Value > 0)
+                {
+                    MessageBox.Show("Salvo com sucesso!");
+                } else
+                {
+                    MessageBox.Show("Insira a quantidade.");
+                }
             } else
             {
-                MessageBox.Show("Preencha os campos!");
+                MessageBox.Show("Insira o código.");
             }
         }
 
@@ -71,6 +79,7 @@ namespace Aula_2409
             label3.ForeColor = Color.White;
             lblVoltar.ForeColor = Color.White;
             this.BackColor = Color.Black;
+            day = false;
         }
 
         private void pictureBox5_Click(object sender, EventArgs e)
@@ -86,6 +95,20 @@ namespace Aula_2409
             label3.ForeColor = Color.Black;
             lblVoltar.ForeColor = Color.Black;
             this.BackColor = Color.SandyBrown;
+            day = true;
+        }
+
+        private void txtCodigo_TextChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void txtCodigo_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if (!Char.IsDigit(e.KeyChar) && e.KeyChar != (char)8)
+            {
+                e.Handled = true;
+            }
         }
     }
 }
