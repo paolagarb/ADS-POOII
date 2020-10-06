@@ -13,6 +13,8 @@ namespace Aula_2409
     public partial class Form2 : Form
     {
         bool day;
+        int option = 1;
+
         public Form2()
         {
             InitializeComponent();
@@ -21,17 +23,14 @@ namespace Aula_2409
             pictureBox4.Visible = false;
         }
 
-        public Form2(bool day)
+        public Form2(int option)
         {
             InitializeComponent();
             trackBar1.Maximum = 3;
-            if (day)
-            {
-                Day();
-            } else
-            {
-                Night();
-            }
+            if (option == 0) First();
+            if (option == 1) Day();
+            if (option == 2) Middle();
+            if (option == 3) Night();
         }
 
         private void Form2_Load(object sender, EventArgs e)
@@ -41,14 +40,14 @@ namespace Aula_2409
 
         private void label2_Click(object sender, EventArgs e)
         {
-            Form1 form1 = new Form1(day);
+            Form1 form1 = new Form1(option);
             form1.Show();
             this.Hide();
         }
 
         private void lblNova_Click(object sender, EventArgs e)
         {
-            Form3 form3 = new Form3(day);
+            Form3 form3 = new Form3(option);
             this.Visible = false;
             form3.Show();
         }
@@ -91,6 +90,7 @@ namespace Aula_2409
             pictureBox2.Visible = true;
             pictureBox4.Visible = false;
             day = true;
+            option = 1;
         }
 
         private void Night()
@@ -106,6 +106,37 @@ namespace Aula_2409
             pictureBox2.Visible = false;
             pictureBox4.Visible = true;
             day = false;
+            option = 3;
+        }
+
+        private void Middle()
+        {
+            picLua.Visible = false;
+            picSol.Visible = true;
+            this.BackColor = Color.Sienna;
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            lblNova.ForeColor = Color.White;
+            pictureBox1.Visible = false;
+            pictureBox3.Visible = true;
+            pictureBox2.Visible = false;
+            pictureBox4.Visible = true;
+            option = 2;
+        }
+
+        private void First()
+        {
+            picSol.Visible = false;
+            picLua.Visible = true;
+            this.BackColor = Color.White;
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            lblNova.ForeColor = Color.Black;
+            pictureBox1.Visible = true;
+            pictureBox3.Visible = false;
+            pictureBox2.Visible = true;
+            pictureBox4.Visible = false;
+            option = 0;
         }
 
         private void picSol_MouseDoubleClick(object sender, MouseEventArgs e)
@@ -148,15 +179,10 @@ namespace Aula_2409
 
         private void trackBar1_Scroll(object sender, EventArgs e)
         {
-           if (trackBar1.Value == 1)
-            {
-                Day();
-            }
-            
-            if (trackBar1.Value == 3)
-            {
-                Night();
-            }
+           if (trackBar1.Value == 0) First();
+           if (trackBar1.Value == 1) Day();
+           if (trackBar1.Value == 2) Middle();
+           if (trackBar1.Value == 3) Night();
         }
     }
 }

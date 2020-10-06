@@ -39,12 +39,14 @@
             this.picSol = new System.Windows.Forms.PictureBox();
             this.picSairB = new System.Windows.Forms.PictureBox();
             this.picLogoB = new System.Windows.Forms.PictureBox();
+            this.trackBar1 = new System.Windows.Forms.TrackBar();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLua)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSol)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSairB)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).BeginInit();
             this.SuspendLayout();
             // 
             // btnEntrar
@@ -121,6 +123,7 @@
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogo.TabIndex = 7;
             this.picLogo.TabStop = false;
+            this.picLogo.Click += new System.EventHandler(this.picLogo_Click);
             // 
             // picLua
             // 
@@ -164,6 +167,15 @@
             this.picLogoB.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picLogoB.TabIndex = 12;
             this.picLogoB.TabStop = false;
+            this.picLogoB.Click += new System.EventHandler(this.picLogoB_Click);
+            // 
+            // trackBar1
+            // 
+            this.trackBar1.Location = new System.Drawing.Point(285, 5);
+            this.trackBar1.Name = "trackBar1";
+            this.trackBar1.Size = new System.Drawing.Size(77, 45);
+            this.trackBar1.TabIndex = 13;
+            this.trackBar1.Scroll += new System.EventHandler(this.trackBar1_Scroll);
             // 
             // Form1
             // 
@@ -171,6 +183,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.SandyBrown;
             this.ClientSize = new System.Drawing.Size(406, 211);
+            this.Controls.Add(this.trackBar1);
             this.Controls.Add(this.picLogoB);
             this.Controls.Add(this.picSairB);
             this.Controls.Add(this.picSol);
@@ -193,6 +206,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.picSol)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picSairB)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.picLogoB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.trackBar1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -211,6 +225,7 @@
         private System.Windows.Forms.PictureBox picSol;
         private System.Windows.Forms.PictureBox picSairB;
         private System.Windows.Forms.PictureBox picLogoB;
+        private System.Windows.Forms.TrackBar trackBar1;
     }
 }
 

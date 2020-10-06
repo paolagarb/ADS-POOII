@@ -14,6 +14,7 @@ namespace Aula_2409
     public partial class Form3 : Form
     {
         bool day = true;
+        int option = 1;
         public Form3()
         {
             InitializeComponent();
@@ -22,16 +23,13 @@ namespace Aula_2409
             pictureBox6.Visible = false;
         }
 
-        public Form3(bool day)
+        public Form3(int option)
         {
             InitializeComponent();
-            if (day)
-            {
-                Day();
-            } else
-            {
-                Night();
-            }
+            if (option == 0) First();
+            if (option == 1) Day();
+            if (option == 2) Middle();
+            if (option == 3) Night();
 
         }
 
@@ -42,7 +40,7 @@ namespace Aula_2409
 
         private void lblVoltar_Click(object sender, EventArgs e)
         {
-            Form2 form2 = new Form2(day);
+            Form2 form2 = new Form2(option);
             form2.Show();
             this.Hide();
         }
@@ -71,7 +69,8 @@ namespace Aula_2409
 
         private void Form3_Load(object sender, EventArgs e)
         {
-
+            trackBar1.Maximum = 3;
+            trackBar1.Visible = false;
         }
 
         private void pictureBox6_Click(object sender, EventArgs e)
@@ -116,6 +115,7 @@ namespace Aula_2409
             lblVoltar.ForeColor = Color.Black;
             this.BackColor = Color.SandyBrown;
             day = true;
+            option = 1;
         }
 
         private void Night()
@@ -132,8 +132,63 @@ namespace Aula_2409
             lblVoltar.ForeColor = Color.White;
             this.BackColor = Color.Black;
             day = false;
+            option = 3;
         }
 
-       
+        private void Middle()
+        {
+            this.BackColor = Color.Sienna; 
+            pictureBox4.Visible = false;
+            pictureBox5.Visible = true;
+            pictureBox6.Visible = true;
+            pictureBox2.Visible = false;
+            pictureBox3.Visible = true;
+            pictureBox1.Visible = false;
+            label1.ForeColor = Color.White;
+            label2.ForeColor = Color.White;
+            label3.ForeColor = Color.White;
+            lblVoltar.ForeColor = Color.White;
+            option = 2;
+        }
+
+        private void First()
+        {
+            this.BackColor = Color.White;
+            pictureBox4.Visible = true;
+            pictureBox5.Visible = false;
+            pictureBox6.Visible = false;
+            pictureBox2.Visible = true;
+            pictureBox3.Visible = false;
+            pictureBox1.Visible = true;
+            label1.ForeColor = Color.Black;
+            label2.ForeColor = Color.Black;
+            label3.ForeColor = Color.Black;
+            lblVoltar.ForeColor = Color.Black;
+            btnSalvar.BackColor = Color.Black;
+            btnSalvar.ForeColor = Color.White;
+            btnSalvar.FlatAppearance.MouseDownBackColor = Color.White;
+            btnSalvar.FlatAppearance.MouseOverBackColor = Color.DarkGray;
+            option = 0;
+        }
+
+        private void trackBar1_Scroll(object sender, EventArgs e)
+        {
+            if (trackBar1.Value == 0) First();
+            if (trackBar1.Value == 1) Day();
+            if (trackBar1.Value == 2) Middle();
+            if (trackBar1.Value == 3) Night();
+        }
+
+        private void pictureBox3_Click(object sender, EventArgs e)
+        {
+            if (trackBar1.Visible == true) trackBar1.Visible = false;
+            if (trackBar1.Visible == false) trackBar1.Visible = true;
+        }
+
+        private void pictureBox1_Click(object sender, EventArgs e)
+        {
+            if (trackBar1.Visible == true) trackBar1.Visible = false;
+            if (trackBar1.Visible == false) trackBar1.Visible = true;
+        }
     }
 }
