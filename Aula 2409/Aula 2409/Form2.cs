@@ -36,6 +36,7 @@ namespace Aula_2409
         private void Form2_Load(object sender, EventArgs e)
         {
             trackBar1.Visible = false;
+           
         }
 
         private void label2_Click(object sender, EventArgs e)
@@ -184,5 +185,9 @@ namespace Aula_2409
            if (trackBar1.Value == 2) Middle();
            if (trackBar1.Value == 3) Night();
         }
+
+   
+
+       
     }
 }
