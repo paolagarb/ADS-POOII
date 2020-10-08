@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.linkLabel1 = new System.Windows.Forms.LinkLabel();
             this.linkLabel2 = new System.Windows.Forms.LinkLabel();
             this.webBrowser1 = new System.Windows.Forms.WebBrowser();
@@ -47,6 +48,9 @@
             this.lblNumero = new System.Windows.Forms.Label();
             this.txtNum = new System.Windows.Forms.TextBox();
             this.btnCadastrar = new System.Windows.Forms.Button();
+            this.progressBar1 = new System.Windows.Forms.ProgressBar();
+            this.lblPorcentagem = new System.Windows.Forms.Label();
+            this.timer1 = new System.Windows.Forms.Timer(this.components);
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -65,7 +69,7 @@
             // 
             this.linkLabel2.AutoSize = true;
             this.linkLabel2.LinkColor = System.Drawing.Color.Black;
-            this.linkLabel2.Location = new System.Drawing.Point(255, 324);
+            this.linkLabel2.Location = new System.Drawing.Point(251, 318);
             this.linkLabel2.Name = "linkLabel2";
             this.linkLabel2.Size = new System.Drawing.Size(41, 13);
             this.linkLabel2.TabIndex = 1;
@@ -81,6 +85,7 @@
             this.webBrowser1.Size = new System.Drawing.Size(306, 322);
             this.webBrowser1.TabIndex = 2;
             this.webBrowser1.Url = new System.Uri("https://www.google.com.br/maps/preview", System.UriKind.Absolute);
+            this.webBrowser1.DocumentCompleted += new System.Windows.Forms.WebBrowserDocumentCompletedEventHandler(this.webBrowser1_DocumentCompleted);
             // 
             // lblNome
             // 
@@ -218,12 +223,36 @@
             this.btnCadastrar.BackColor = System.Drawing.Color.WhiteSmoke;
             this.btnCadastrar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btnCadastrar.Font = new System.Drawing.Font("Microsoft Uighur", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCadastrar.Location = new System.Drawing.Point(103, 266);
+            this.btnCadastrar.Location = new System.Drawing.Point(103, 267);
             this.btnCadastrar.Name = "btnCadastrar";
             this.btnCadastrar.Size = new System.Drawing.Size(101, 32);
             this.btnCadastrar.TabIndex = 19;
             this.btnCadastrar.Text = "CADASTRAR";
             this.btnCadastrar.UseVisualStyleBackColor = false;
+            this.btnCadastrar.Click += new System.EventHandler(this.btnCadastrar_Click);
+            // 
+            // progressBar1
+            // 
+            this.progressBar1.Location = new System.Drawing.Point(33, 302);
+            this.progressBar1.Name = "progressBar1";
+            this.progressBar1.Size = new System.Drawing.Size(259, 13);
+            this.progressBar1.TabIndex = 20;
+            this.progressBar1.Visible = false;
+            this.progressBar1.Click += new System.EventHandler(this.progressBar1_Click);
+            // 
+            // lblPorcentagem
+            // 
+            this.lblPorcentagem.AutoSize = true;
+            this.lblPorcentagem.Location = new System.Drawing.Point(145, 318);
+            this.lblPorcentagem.Name = "lblPorcentagem";
+            this.lblPorcentagem.Size = new System.Drawing.Size(21, 13);
+            this.lblPorcentagem.TabIndex = 21;
+            this.lblPorcentagem.Text = "0%";
+            this.lblPorcentagem.Visible = false;
+            // 
+            // timer1
+            // 
+            this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
             // Google
             // 
@@ -231,6 +260,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(632, 346);
+            this.Controls.Add(this.lblPorcentagem);
+            this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnCadastrar);
             this.Controls.Add(this.txtNum);
             this.Controls.Add(this.lblNumero);
@@ -280,6 +311,9 @@
         private System.Windows.Forms.Label lblNumero;
         private System.Windows.Forms.TextBox txtNum;
         private System.Windows.Forms.Button btnCadastrar;
+        private System.Windows.Forms.ProgressBar progressBar1;
+        private System.Windows.Forms.Label lblPorcentagem;
+        private System.Windows.Forms.Timer timer1;
     }
 }
 
