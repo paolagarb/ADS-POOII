@@ -44,23 +44,22 @@ namespace Aula_0810
 
         private void btnCadastrar_Click(object sender, EventArgs e)
         {
-          
-
-
-            if (!string.IsNullOrEmpty(txtEmail.Text) 
-               || !string.IsNullOrEmpty(txtEndereço.Text) 
-               || !string.IsNullOrEmpty(txtNome.Text) 
-               || !string.IsNullOrEmpty(txtNum.Text) 
-               || !string.IsNullOrEmpty(txtSenha.Text) 
-               || !string.IsNullOrEmpty(maskTelefone.Text))
+            if (string.IsNullOrEmpty(txtEmail.Text) 
+               || string.IsNullOrEmpty(txtEndereço.Text) 
+               || string.IsNullOrEmpty(txtNome.Text) 
+               || string.IsNullOrEmpty(txtNum.Text) 
+               || string.IsNullOrEmpty(txtSenha.Text) 
+               || string.IsNullOrEmpty(maskTelefone.Text)
+               || string.IsNullOrEmpty(maskTelefone2.Text))
+            {
+                MessageBox.Show("Preencha todos os campos!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
+            }
+            else
             {
                 lblPorcentagem.Visible = true;
                 progressBar1.Visible = true;
                 timer1.Start();
                 new Thread(Run).Start();
-            } else
-            {
-                MessageBox.Show("Preencha todos os campos!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
         }
 
