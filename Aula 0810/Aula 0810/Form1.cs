@@ -39,7 +39,7 @@ namespace Aula_0810
 
         private void webBrowser1_DocumentCompleted(object sender, WebBrowserDocumentCompletedEventArgs e)
         {
-            webBrowser1.Document.Body.Style = "zoom: 50%";
+            //webBrowser1.Document.Body.Style = "zoom: 20%";
         }
 
         private void btnCadastrar_Click(object sender, EventArgs e)
@@ -52,7 +52,7 @@ namespace Aula_0810
                || !string.IsNullOrEmpty(txtNome.Text) 
                || !string.IsNullOrEmpty(txtNum.Text) 
                || !string.IsNullOrEmpty(txtSenha.Text) 
-               || !string.IsNullOrEmpty(txtTelefone.Text))
+               || !string.IsNullOrEmpty(maskTelefone.Text))
             {
                 lblPorcentagem.Visible = true;
                 progressBar1.Visible = true;

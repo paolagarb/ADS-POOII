@@ -37,7 +37,6 @@
             this.lblTelefone = new System.Windows.Forms.Label();
             this.lblCEP = new System.Windows.Forms.Label();
             this.txtNome = new System.Windows.Forms.TextBox();
-            this.txtTelefone = new System.Windows.Forms.TextBox();
             this.txtEndereço = new System.Windows.Forms.TextBox();
             this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label1 = new System.Windows.Forms.Label();
@@ -51,6 +50,8 @@
             this.progressBar1 = new System.Windows.Forms.ProgressBar();
             this.lblPorcentagem = new System.Windows.Forms.Label();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
+            this.maskTelefone = new System.Windows.Forms.MaskedTextBox();
+            this.maskTelefone2 = new System.Windows.Forms.MaskedTextBox();
             this.SuspendLayout();
             // 
             // linkLabel1
@@ -133,13 +134,6 @@
             this.txtNome.Name = "txtNome";
             this.txtNome.Size = new System.Drawing.Size(199, 20);
             this.txtNome.TabIndex = 7;
-            // 
-            // txtTelefone
-            // 
-            this.txtTelefone.Location = new System.Drawing.Point(103, 190);
-            this.txtTelefone.Name = "txtTelefone";
-            this.txtTelefone.Size = new System.Drawing.Size(180, 20);
-            this.txtTelefone.TabIndex = 9;
             // 
             // txtEndereço
             // 
@@ -254,12 +248,30 @@
             // 
             this.timer1.Tick += new System.EventHandler(this.timer1_Tick);
             // 
+            // maskTelefone
+            // 
+            this.maskTelefone.Location = new System.Drawing.Point(104, 189);
+            this.maskTelefone.Mask = "(00) 00000-0000";
+            this.maskTelefone.Name = "maskTelefone";
+            this.maskTelefone.Size = new System.Drawing.Size(88, 20);
+            this.maskTelefone.TabIndex = 23;
+            // 
+            // maskTelefone2
+            // 
+            this.maskTelefone2.Location = new System.Drawing.Point(195, 189);
+            this.maskTelefone2.Mask = "(00) 00000-0000";
+            this.maskTelefone2.Name = "maskTelefone2";
+            this.maskTelefone2.Size = new System.Drawing.Size(88, 20);
+            this.maskTelefone2.TabIndex = 24;
+            // 
             // Google
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.MediumAquamarine;
             this.ClientSize = new System.Drawing.Size(632, 346);
+            this.Controls.Add(this.maskTelefone2);
+            this.Controls.Add(this.maskTelefone);
             this.Controls.Add(this.lblPorcentagem);
             this.Controls.Add(this.progressBar1);
             this.Controls.Add(this.btnCadastrar);
@@ -272,7 +284,6 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.txtEndereço);
-            this.Controls.Add(this.txtTelefone);
             this.Controls.Add(this.txtNome);
             this.Controls.Add(this.lblCEP);
             this.Controls.Add(this.lblTelefone);
@@ -300,7 +311,6 @@
         private System.Windows.Forms.Label lblTelefone;
         private System.Windows.Forms.Label lblCEP;
         private System.Windows.Forms.TextBox txtNome;
-        private System.Windows.Forms.TextBox txtTelefone;
         private System.Windows.Forms.TextBox txtEndereço;
         private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label1;
@@ -314,6 +324,8 @@
         private System.Windows.Forms.ProgressBar progressBar1;
         private System.Windows.Forms.Label lblPorcentagem;
         private System.Windows.Forms.Timer timer1;
+        private System.Windows.Forms.MaskedTextBox maskTelefone;
+        private System.Windows.Forms.MaskedTextBox maskTelefone2;
     }
 }
 
