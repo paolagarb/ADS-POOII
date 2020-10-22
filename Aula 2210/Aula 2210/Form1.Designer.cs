@@ -42,8 +42,8 @@
             this.label12 = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.gpBoxLancamento = new System.Windows.Forms.GroupBox();
-            this.radioBtnSim = new System.Windows.Forms.RadioButton();
             this.radioBtnNao = new System.Windows.Forms.RadioButton();
+            this.radioBtnSim = new System.Windows.Forms.RadioButton();
             this.btnGravar = new System.Windows.Forms.Button();
             this.dtpickerDate = new System.Windows.Forms.DateTimePicker();
             this.cboCategoria = new System.Windows.Forms.ComboBox();
@@ -213,27 +213,27 @@
             this.gpBoxLancamento.TabIndex = 13;
             this.gpBoxLancamento.TabStop = false;
             // 
-            // radioBtnSim
-            // 
-            this.radioBtnSim.AutoSize = true;
-            this.radioBtnSim.Location = new System.Drawing.Point(16, 9);
-            this.radioBtnSim.Name = "radioBtnSim";
-            this.radioBtnSim.Size = new System.Drawing.Size(44, 17);
-            this.radioBtnSim.TabIndex = 0;
-            this.radioBtnSim.TabStop = true;
-            this.radioBtnSim.Text = "SIM";
-            this.radioBtnSim.UseVisualStyleBackColor = true;
-            // 
             // radioBtnNao
             // 
             this.radioBtnNao.AutoSize = true;
             this.radioBtnNao.Location = new System.Drawing.Point(77, 9);
             this.radioBtnNao.Name = "radioBtnNao";
-            this.radioBtnNao.Size = new System.Drawing.Size(48, 17);
+            this.radioBtnNao.Size = new System.Drawing.Size(45, 17);
             this.radioBtnNao.TabIndex = 1;
             this.radioBtnNao.TabStop = true;
-            this.radioBtnNao.Text = "NÃO";
+            this.radioBtnNao.Text = "Não";
             this.radioBtnNao.UseVisualStyleBackColor = true;
+            // 
+            // radioBtnSim
+            // 
+            this.radioBtnSim.AutoSize = true;
+            this.radioBtnSim.Location = new System.Drawing.Point(16, 9);
+            this.radioBtnSim.Name = "radioBtnSim";
+            this.radioBtnSim.Size = new System.Drawing.Size(42, 17);
+            this.radioBtnSim.TabIndex = 0;
+            this.radioBtnSim.TabStop = true;
+            this.radioBtnSim.Text = "Sim";
+            this.radioBtnSim.UseVisualStyleBackColor = true;
             // 
             // btnGravar
             // 
@@ -268,11 +268,11 @@
             // mskID
             // 
             this.mskID.Location = new System.Drawing.Point(128, 122);
-            this.mskID.Mask = "00000";
+            this.mskID.Mask = "000";
             this.mskID.Name = "mskID";
             this.mskID.Size = new System.Drawing.Size(141, 20);
             this.mskID.TabIndex = 26;
-            this.mskID.ValidatingType = typeof(int);
+            this.mskID.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.mskID_KeyPress);
             // 
             // mskRazaoSocial
             // 
@@ -419,7 +419,7 @@
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLimpar.UseVisualStyleBackColor = false;
-            this.btnLimpar.Click += new System.EventHandler(this.button1_Click);
+            this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
             // 
             // Form1
             // 
