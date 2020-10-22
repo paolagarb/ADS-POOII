@@ -322,7 +322,7 @@
             // mskValor
             // 
             this.mskValor.Location = new System.Drawing.Point(400, 184);
-            this.mskValor.Mask = "$ 00,00";
+            this.mskValor.Mask = "$ 00000,00";
             this.mskValor.Name = "mskValor";
             this.mskValor.Size = new System.Drawing.Size(141, 20);
             this.mskValor.TabIndex = 32;
