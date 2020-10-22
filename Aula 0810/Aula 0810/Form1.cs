@@ -49,8 +49,7 @@ namespace Aula_0810
                || string.IsNullOrEmpty(txtNome.Text) 
                || string.IsNullOrEmpty(txtNum.Text) 
                || string.IsNullOrEmpty(txtSenha.Text) 
-               || string.IsNullOrEmpty(maskTelefone.Text)
-               || string.IsNullOrEmpty(maskTelefone2.Text))
+               || string.IsNullOrEmpty(maskTelefone.Text))
             {
                 MessageBox.Show("Preencha todos os campos!", "Alerta", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
             }
