@@ -68,16 +68,24 @@
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.btnLimpar = new System.Windows.Forms.Button();
+            this.pictureBox3 = new System.Windows.Forms.PictureBox();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.picSair = new System.Windows.Forms.PictureBox();
             this.gpBoxLancamento.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSair)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Uighur", 24F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(188, 9);
+            this.label1.Location = new System.Drawing.Point(188, 13);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(204, 38);
             this.label1.TabIndex = 0;
@@ -87,7 +95,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(15, -6);
+            this.label2.Location = new System.Drawing.Point(20, -6);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(119, 29);
             this.label2.TabIndex = 1;
@@ -107,7 +115,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(27, 112);
+            this.label4.Location = new System.Drawing.Point(27, 106);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(30, 30);
             this.label4.TabIndex = 3;
@@ -117,7 +125,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(27, 148);
+            this.label5.Location = new System.Drawing.Point(27, 142);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(92, 30);
             this.label5.TabIndex = 4;
@@ -127,7 +135,7 @@
             // 
             this.label6.AutoSize = true;
             this.label6.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(27, 184);
+            this.label6.Location = new System.Drawing.Point(27, 178);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(64, 30);
             this.label6.TabIndex = 5;
@@ -137,7 +145,7 @@
             // 
             this.label7.AutoSize = true;
             this.label7.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.Location = new System.Drawing.Point(27, 220);
+            this.label7.Location = new System.Drawing.Point(27, 214);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(70, 30);
             this.label7.TabIndex = 6;
@@ -147,7 +155,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(27, 256);
+            this.label8.Location = new System.Drawing.Point(27, 250);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(54, 30);
             this.label8.TabIndex = 7;
@@ -157,7 +165,7 @@
             // 
             this.label9.AutoSize = true;
             this.label9.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label9.Location = new System.Drawing.Point(307, 254);
+            this.label9.Location = new System.Drawing.Point(307, 248);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(88, 30);
             this.label9.TabIndex = 12;
@@ -167,7 +175,7 @@
             // 
             this.label10.AutoSize = true;
             this.label10.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.Location = new System.Drawing.Point(307, 220);
+            this.label10.Location = new System.Drawing.Point(307, 214);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(44, 30);
             this.label10.TabIndex = 11;
@@ -177,7 +185,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(307, 184);
+            this.label11.Location = new System.Drawing.Point(307, 178);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(48, 30);
             this.label11.TabIndex = 10;
@@ -187,7 +195,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.Location = new System.Drawing.Point(307, 148);
+            this.label12.Location = new System.Drawing.Point(307, 142);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(65, 30);
             this.label12.TabIndex = 9;
@@ -197,7 +205,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Uighur", 16F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.Location = new System.Drawing.Point(307, 112);
+            this.label13.Location = new System.Drawing.Point(307, 106);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(74, 30);
             this.label13.TabIndex = 8;
@@ -207,7 +215,7 @@
             // 
             this.gpBoxLancamento.Controls.Add(this.radioBtnNao);
             this.gpBoxLancamento.Controls.Add(this.radioBtnSim);
-            this.gpBoxLancamento.Location = new System.Drawing.Point(401, 250);
+            this.gpBoxLancamento.Location = new System.Drawing.Point(401, 244);
             this.gpBoxLancamento.Name = "gpBoxLancamento";
             this.gpBoxLancamento.Size = new System.Drawing.Size(141, 28);
             this.gpBoxLancamento.TabIndex = 13;
@@ -227,6 +235,7 @@
             // radioBtnSim
             // 
             this.radioBtnSim.AutoSize = true;
+            this.radioBtnSim.Checked = true;
             this.radioBtnSim.Location = new System.Drawing.Point(16, 9);
             this.radioBtnSim.Name = "radioBtnSim";
             this.radioBtnSim.Size = new System.Drawing.Size(42, 17);
@@ -243,7 +252,7 @@
             this.btnGravar.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.btnGravar.Location = new System.Drawing.Point(218, 304);
             this.btnGravar.Name = "btnGravar";
-            this.btnGravar.Size = new System.Drawing.Size(137, 33);
+            this.btnGravar.Size = new System.Drawing.Size(137, 34);
             this.btnGravar.TabIndex = 23;
             this.btnGravar.Text = "GRAVAR";
             this.btnGravar.UseVisualStyleBackColor = false;
@@ -252,7 +261,7 @@
             // dtpickerDate
             // 
             this.dtpickerDate.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dtpickerDate.Location = new System.Drawing.Point(401, 224);
+            this.dtpickerDate.Location = new System.Drawing.Point(401, 218);
             this.dtpickerDate.Name = "dtpickerDate";
             this.dtpickerDate.Size = new System.Drawing.Size(141, 20);
             this.dtpickerDate.TabIndex = 24;
@@ -260,14 +269,14 @@
             // cboCategoria
             // 
             this.cboCategoria.FormattingEnabled = true;
-            this.cboCategoria.Location = new System.Drawing.Point(400, 121);
+            this.cboCategoria.Location = new System.Drawing.Point(400, 115);
             this.cboCategoria.Name = "cboCategoria";
             this.cboCategoria.Size = new System.Drawing.Size(141, 21);
             this.cboCategoria.TabIndex = 25;
             // 
             // mskID
             // 
-            this.mskID.Location = new System.Drawing.Point(128, 122);
+            this.mskID.Location = new System.Drawing.Point(128, 116);
             this.mskID.Mask = "000";
             this.mskID.Name = "mskID";
             this.mskID.Size = new System.Drawing.Size(141, 20);
@@ -276,14 +285,14 @@
             // 
             // mskRazaoSocial
             // 
-            this.mskRazaoSocial.Location = new System.Drawing.Point(128, 156);
+            this.mskRazaoSocial.Location = new System.Drawing.Point(128, 150);
             this.mskRazaoSocial.Name = "mskRazaoSocial";
             this.mskRazaoSocial.Size = new System.Drawing.Size(141, 20);
             this.mskRazaoSocial.TabIndex = 27;
             // 
             // mskTelefone
             // 
-            this.mskTelefone.Location = new System.Drawing.Point(128, 190);
+            this.mskTelefone.Location = new System.Drawing.Point(128, 184);
             this.mskTelefone.Mask = "(000) 00000-0000";
             this.mskTelefone.Name = "mskTelefone";
             this.mskTelefone.Size = new System.Drawing.Size(141, 20);
@@ -291,34 +300,36 @@
             // 
             // mskEndereco
             // 
-            this.mskEndereco.Location = new System.Drawing.Point(128, 224);
+            this.mskEndereco.Location = new System.Drawing.Point(128, 218);
             this.mskEndereco.Name = "mskEndereco";
             this.mskEndereco.Size = new System.Drawing.Size(141, 20);
             this.mskEndereco.TabIndex = 29;
             // 
             // mskEmail
             // 
-            this.mskEmail.Location = new System.Drawing.Point(128, 258);
+            this.mskEmail.Location = new System.Drawing.Point(128, 252);
             this.mskEmail.Name = "mskEmail";
             this.mskEmail.Size = new System.Drawing.Size(141, 20);
             this.mskEmail.TabIndex = 30;
             // 
             // mskProduto
             // 
-            this.mskProduto.Location = new System.Drawing.Point(400, 156);
+            this.mskProduto.Location = new System.Drawing.Point(400, 150);
             this.mskProduto.Name = "mskProduto";
             this.mskProduto.Size = new System.Drawing.Size(141, 20);
             this.mskProduto.TabIndex = 31;
             // 
             // mskValor
             // 
-            this.mskValor.Location = new System.Drawing.Point(400, 190);
+            this.mskValor.Location = new System.Drawing.Point(400, 184);
+            this.mskValor.Mask = "$ 00,00";
             this.mskValor.Name = "mskValor";
             this.mskValor.Size = new System.Drawing.Size(141, 20);
             this.mskValor.TabIndex = 32;
             // 
             // listView1
             // 
+            this.listView1.BackColor = System.Drawing.SystemColors.Window;
             this.listView1.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
             this.columnHeaderID,
             this.columnHeaderRazaoSocial,
@@ -391,10 +402,9 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Location = new System.Drawing.Point(12, 76);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(270, 216);
+            this.groupBox1.Size = new System.Drawing.Size(269, 216);
             this.groupBox1.TabIndex = 34;
             this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
             // 
             // groupBox2
             // 
@@ -414,12 +424,58 @@
             this.btnLimpar.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLimpar.Location = new System.Drawing.Point(243, 344);
             this.btnLimpar.Name = "btnLimpar";
-            this.btnLimpar.Size = new System.Drawing.Size(90, 26);
+            this.btnLimpar.Size = new System.Drawing.Size(90, 29);
             this.btnLimpar.TabIndex = 36;
             this.btnLimpar.Text = "LIMPAR";
             this.btnLimpar.TextAlign = System.Drawing.ContentAlignment.TopCenter;
             this.btnLimpar.UseVisualStyleBackColor = false;
             this.btnLimpar.Click += new System.EventHandler(this.btnLimpar_Click);
+            // 
+            // pictureBox3
+            // 
+            this.pictureBox3.Image = global::Aula_2210.Properties.Resources.sair;
+            this.pictureBox3.Location = new System.Drawing.Point(541, 9);
+            this.pictureBox3.Name = "pictureBox3";
+            this.pictureBox3.Size = new System.Drawing.Size(25, 21);
+            this.pictureBox3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox3.TabIndex = 40;
+            this.pictureBox3.TabStop = false;
+            this.pictureBox3.Visible = false;
+            this.pictureBox3.Click += new System.EventHandler(this.pictureBox3_Click);
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::Aula_2210.Properties.Resources.lua;
+            this.pictureBox2.Location = new System.Drawing.Point(388, 12);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox2.TabIndex = 39;
+            this.pictureBox2.TabStop = false;
+            this.pictureBox2.Visible = false;
+            this.pictureBox2.Click += new System.EventHandler(this.pictureBox2_Click);
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Image = global::Aula_2210.Properties.Resources.sol;
+            this.pictureBox1.Location = new System.Drawing.Point(388, 12);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(32, 30);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.pictureBox1.TabIndex = 38;
+            this.pictureBox1.TabStop = false;
+            this.pictureBox1.Click += new System.EventHandler(this.pictureBox1_Click);
+            // 
+            // picSair
+            // 
+            this.picSair.Image = global::Aula_2210.Properties.Resources.sair_branco;
+            this.picSair.Location = new System.Drawing.Point(541, 9);
+            this.picSair.Name = "picSair";
+            this.picSair.Size = new System.Drawing.Size(25, 21);
+            this.picSair.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picSair.TabIndex = 37;
+            this.picSair.TabStop = false;
+            this.picSair.Click += new System.EventHandler(this.picSair_Click);
             // 
             // Form1
             // 
@@ -427,6 +483,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.ClientSize = new System.Drawing.Size(578, 514);
+            this.Controls.Add(this.pictureBox3);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.pictureBox1);
+            this.Controls.Add(this.picSair);
             this.Controls.Add(this.btnLimpar);
             this.Controls.Add(this.listView1);
             this.Controls.Add(this.mskValor);
@@ -456,6 +516,7 @@
             this.ForeColor = System.Drawing.SystemColors.ButtonHighlight;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.gpBoxLancamento.ResumeLayout(false);
             this.gpBoxLancamento.PerformLayout();
@@ -463,6 +524,10 @@
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picSair)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -510,6 +575,10 @@
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnLimpar;
+        private System.Windows.Forms.PictureBox picSair;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.PictureBox pictureBox3;
     }
 }
 
