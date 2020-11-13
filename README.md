@@ -37,4 +37,26 @@ Criar um formulário utilizando:
 
 <hr>
 
+:calendar: 22/10 [1]
+
+Criar uma lista utilizando um CheckedListBox :white_check_mark:
+
+Passar lista para um ListBox  :white_check_mark:
+
+
+<hr>
+
+:calendar: 22/10 [2]
+
+Criar um formulário utilizando:
+
+- TextBox, :white_check_mark:
+
+- MaskedTextBox, :white_check_mark:
+
+Adicionar formulário em um ListView :white_check_mark:
+
+
+<hr>
+
 :heavy_exclamation_mark: Todos possuem tema livre.
