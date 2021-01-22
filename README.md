@@ -60,3 +60,33 @@ Adicionar formulário em um ListView :white_check_mark:
 <hr>
 
 :heavy_exclamation_mark: Todos possuem tema livre.
+
+
+### Pré-visualização
+
+#### 10/09
+
+![1009](https://user-images.githubusercontent.com/69488783/105531413-08748280-5cc8-11eb-9449-f2811f014fec.gif)
+
+
+#### 24/09
+
+![2409](https://user-images.githubusercontent.com/69488783/105531417-090d1900-5cc8-11eb-99c9-dafbd9ac2f90.gif)
+
+
+#### 08/10
+
+![0810](https://user-images.githubusercontent.com/69488783/105531419-09a5af80-5cc8-11eb-8682-b786e47f9b47.gif)
+
+
+#### 22/10
+
+![2201](https://user-images.githubusercontent.com/69488783/105531420-0a3e4600-5cc8-11eb-8e85-e02b85222349.gif)
+
+
+#### 22/10
+
+![2210](https://user-images.githubusercontent.com/69488783/105531421-0a3e4600-5cc8-11eb-9a48-62fcb2f8a991.gif)
+
+
+
